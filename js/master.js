@@ -16,7 +16,7 @@ $(document).ready(function(){
 // Video background
 var videoBg = document.getElementsByClassName('fullscreen-video')[0];
 if (window.matchMedia('(min-width: 992px)').matches) {
-  videoBg.innerHTML = '<video autoplay loop muted class="d-none d-lg-block"><source src="img/training3.mp4" type="video/mp4"></video>';
+  videoBg.innerHTML = '<video autoplay loop muted class="d-none d-lg-block"><source src="https://video-previews.elements.envatousercontent.com/h264-video-previews/4d88cb97-e6b4-4756-bf18-d6564d48e4c9/22115860.mp4" type="video/mp4"></video>';
 } else {
   videoBg.innerHTML = '';
 }
