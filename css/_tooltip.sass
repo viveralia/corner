@@ -1,0 +1,32 @@
+// Tooltip
+.tooltip-container
+  position: relative
+  cursor: pointer
+
+.tooltip-container .tooltip-text
+  visibility: hidden
+  font-size: .825em
+  width: 140px
+  background-color: #fff
+  color: #1b1b1b
+  text-align: center
+  border-radius: 6px
+  padding: 5px 0
+  position: absolute
+  z-index: 1
+  top: 150%
+  left: 50%
+  margin-left: -70px
+
+.tooltip-container .tooltip-text::after
+  content: ""
+  position: absolute
+  bottom: 100%
+  left: 50%
+  margin-left: -5px
+  border-width: 5px
+  border-style: solid
+  border-color: transparent transparent #fff transparent
+
+.tooltip-container:hover .tooltip-text
+  visibility: visible

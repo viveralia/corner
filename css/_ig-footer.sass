@@ -1,0 +1,50 @@
+footer
+  background: #1b1b1b
+  a
+    +transition
+  a:hover
+    text-decoration: none
+    opacity: 1 !important
+    +transition
+  .copyright
+    text-align: center
+  .logo
+    height: 30px
+    display: block
+    margin: auto
+  .social
+    ul
+      li
+        margin-right: 1em
+        &:last-child
+          margin-right: 0
+
+.feed-item
+  height: 50vw
+
+.ig-link:hover
+  text-decoration: none
+
+.instagram
+  text-align: center
+  font-size: 1.75em
+  background: rgba(255, 255, 255, 0.46)
+  height: 100%
+  opacity: 0
+  +transition
+
+.ig-link:hover .instagram
+  opacity: 1
+  +transition
+
+.fa-heart
+  font-size: .75em
+
+@media (min-width: $md)
+  footer
+    .copyright
+      text-align: left
+    .logo
+      margin: 0
+  .feed-item
+    height: 25vw

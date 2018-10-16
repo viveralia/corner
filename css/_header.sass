@@ -1,0 +1,31 @@
+header
+  z-index: 2
+  nav
+    text-align: center
+    ul
+      li
+        margin-right: 1em
+        &:last-child
+          margin: 0
+        a
+          color: inherit
+          opacity: .75
+          +transition
+        a:hover, a:focus, a:active
+          text-decoration: none !important
+          opacity: 1
+          +transition
+
+// Mediaqueries
+@media (min-width: $md)
+  header
+    .logo
+      max-width: 125px
+      margin-left: 0 !important
+    nav
+      text-align: right
+
+@media (min-width: $lg)
+  header
+    .logo
+      max-width: 130px

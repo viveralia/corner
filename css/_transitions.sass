@@ -1,0 +1,97 @@
+// Transitions Mixins
+=transition
+  -webkit-transition: all .15s ease
+  -moz-transition: all .15s ease
+  -o-transition: all .15s ease
+  transition: all .15s ease
+
+=transition-long
+  -webkit-transition: all .375s ease
+  -moz-transition: all .375s ease
+  -o-transition: all .375s ease
+  transition: all .375s ease
+
+=scale
+  -ms-transform: scale(1.015, 1.015)
+  -webkit-transform: scale(1.015, 1.015)
+  transform: scale(1.015, 1.015)
+
+// Animate.css
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+// SlideInUp
+@-webkit-keyframes slideInUp
+  from
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+    visibility: visible
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+@keyframes slideInUp
+  from
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+    visibility: visible
+  to
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.slideInUp
+  -webkit-animation-name: slideInUp
+  animation-name: slideInUp
+
+// slideOutDown
+@-webkit-keyframes slideOutDown
+  from
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+  to
+    visibility: hidden
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+@keyframes slideOutDown
+  from
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+  to
+    visibility: hidden
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+.slideOutDown
+  -webkit-animation-name: slideOutDown
+  animation-name: slideOutDown
+
+@-webkit-keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.fadeInUp
+  -webkit-animation-name: fadeInUp
+  animation-name: fadeInUp
+
+.reveal-on-scroll
+  opacity: 0
