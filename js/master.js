@@ -24,10 +24,8 @@ if (window.matchMedia('(min-width: 992px)').matches) {
 // Instafeed
 var feed = new Instafeed({
     get: 'user',
-    userId: '177922044',
-    accessToken: '177922044.1677ed0.ca0d948bd97347b093d24d2d22dc01fb',
-    // userId: '5763138881',
-    // accessToken: '',
+    userId: '5763138881',
+    accessToken: '5763138881.1677ed0.f1ab614b5898403fbad292f919d388d8',
     limit: 4,
     resolution: 'standard_resolution',
     sortBy: 'most-recent',
